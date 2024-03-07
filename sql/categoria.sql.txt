@@ -1,0 +1,6 @@
+INSERT INTO `ajaxdb`.`categorias` (`id`, `titulo`) VALUES ('1', 'Informática');
+INSERT INTO `ajaxdb`.`categorias` (`id`, `titulo`) VALUES ('2', 'Cursos');
+INSERT INTO `ajaxdb`.`categorias` (`id`, `titulo`) VALUES ('3', 'Games');
+INSERT INTO `ajaxdb`.`categorias` (`id`, `titulo`) VALUES ('4', 'Eletrônicos');
+INSERT INTO `ajaxdb`.`categorias` (`id`, `titulo`) VALUES ('5', 'Móveis');
+INSERT INTO `ajaxdb`.`categorias` (`id`, `titulo`) VALUES ('6', 'Televisão');
