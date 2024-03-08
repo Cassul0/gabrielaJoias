@@ -2,50 +2,8 @@
 <html layout:decorate="~{layout}">
 <head><meta charset="UTF-8" /></head>
 <body>
-
-	<section class="layout-content">
-		<nav class="navbar navbar-expand-md bg-light">
-			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<i class="oi oi-caret-right"></i>
-						<span>Home</span>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		
-		<div class="container">
-			<div id="list-home" class="row">
-				<div class="col-4">
-					<div class="list-group" id="list-tab" role="tablist">
-						<a class="list-group-item list-group-item-action active"
-							id="list-spring-boot-list" data-toggle="list" href="#spring-boot"
-							role="tab" aria-controls="spring-boot">Spring-Boot</a> <a
-							class="list-group-item list-group-item-action" id="list-sts-list"
-							data-toggle="list" href="#sts" role="tab" aria-controls="sts">Spring
-							Tool Suite</a> <a class="list-group-item list-group-item-action"
-							id="list-thymeleaf-list" data-toggle="list" href="#thymeleaf"
-							role="tab" aria-controls="thymeleaf">Thymeleaf</a> <a
-							class="list-group-item list-group-item-action"
-							id="list-webjars-list" data-toggle="list" href="#webjars"
-							role="tab" aria-controls="webjars">WebJars</a> <a
-							class="list-group-item list-group-item-action"
-							id="list-hibernate-list" data-toggle="list" href="#hibernate"
-							role="tab" aria-controls="hibernate">Hibernate</a> <a
-							class="list-group-item list-group-item-action"
-							id="list-bootstrap-list" data-toggle="list" href="#bootstrap"
-							role="tab" aria-controls="bootstrap">Bootstrap 4</a>
-					</div>
-				</div>
-				<div class="col-8">
-					<div class="tab-content" id="nav-tabContent">
-
-					</div>
-				</div>
-			</div>
-		</div>
-	
-	</section>		
+	<div class="corpo" layout:fragment="corpo">
+	Bem Vindo!
+	</div>	
 </body>
 </html >
