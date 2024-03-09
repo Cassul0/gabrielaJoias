@@ -11,3 +11,5 @@ Isso deve ser o suficiente para subir o projeto.
 Se não funcionar, pode utilizar o spring tool suite 4, importando o projeto como maven project.
 Realizar o Update Project marcando a opção force update of Snpashots/Releases, em Project > Update Maven Project
 Após esses comandos, já pode subir o projeto.
+
+Link para acessar o projeto: http://localhost:8080/
