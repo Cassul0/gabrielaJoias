@@ -1,6 +1,6 @@
 <html layout:decorate="~{layout}">
-<head><meta charset="UTF-8" /></head>
-
+<head><meta charset="UTF-8" />
+</head>
 <body>
 	<div class="corpo" layout:fragment="corpo">
 		<div class="container">
@@ -15,6 +15,8 @@
 								<th scope="col">#</th>
 								<th scope="col">Nome</th>
 								<th scope="col">Email</th>
+								<th scope="col">Editar</th>
+								<th scope="col">Excluir</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -22,6 +24,13 @@
 								<td th:text="${u.id}"></td>
 								<td th:text="${u.nome}"></td>
 								<td th:text="${u.email}"></td>
+								<td text="">-</td>
+								<td>
+		                            <a class="btn btn-sm"
+										th:href="@{/usuario/excluir/{id} (id=${u.id}) }">
+										<span class="oi--circle-x" title="Excluir"></span>
+									</a>
+								</td>
 							</tr>
 						</tbody>
 					</table>

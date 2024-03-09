@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -32,5 +33,11 @@ public class UsuarioController {
 	public String listarUsuarios(ModelMap model) {
 		model.addAttribute("usuarios", usuarioService.findAll());
 		return "usuario/lista";
+	}
+	
+	@GetMapping("/excluir/{id}")
+	public String excluir(@PathVariable("id") Long id) {
+		usuarioService.deleteById(id);
+		return "redirect:/usuario/lista";
 	}
 }

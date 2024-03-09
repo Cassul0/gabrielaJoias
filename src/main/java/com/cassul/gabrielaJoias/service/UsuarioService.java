@@ -27,4 +27,8 @@ public class UsuarioService {
     	return repository.findAll();
     }
 
+    @Transactional(readOnly = false)
+    public void deleteById(Long id) {
+    	repository.deleteById(id);
+    }
 }
