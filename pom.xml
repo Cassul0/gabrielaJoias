@@ -6,8 +6,8 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.0.1</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<version>2.7.1</version>
+		<relativePath /> 
 	</parent>
 	<groupId>com.cassul</groupId>
 	<artifactId>gabriela-Joias</artifactId>
@@ -51,11 +51,6 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
