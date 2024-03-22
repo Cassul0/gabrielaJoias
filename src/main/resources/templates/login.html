@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Login</title>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="Gestão grade horária" />
+<!-- Icons fontawesome -->
+<link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+	crossorigin="anonymous" rel="stylesheet" />
+<style>
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@media ( min-width : 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+}
+
+.container {
+	width: 50vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+</style>
+
+<!-- Custom styles for this template -->
+<!-- Bootstrap core CSS -->
+<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="/webjars/open-iconic/font/css/open-iconic-bootstrap.min.css"
+	rel="stylesheet" />
+<link
+	href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css"
+	rel="stylesheet" type="text/css">
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css"
+	rel="stylesheet">
+<link
+	href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"
+	rel="stylesheet" type="text/css">
+<link href="/css/style.css" rel="stylesheet" />
+<link th:href="@{/css/style-login.css(v=${version})}" rel="stylesheet" />
+<script src="js/login.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<form class="form-signin was-validated" method="post"
+			action="/login">
+			<div class="text-center mb-4">
+
+				<h1 class="h3 mb-3 font-weight-normal"></h1>
+				<hr>
+				<p class="font-weight-lighter">Seja bem-vindo.</p>
+				<p class="text-muted">Realize seu login para continuar</p>
+			</div>
+			<div class="row" style="width: 480px; text-align: center">
+				<div class="form-label-group">
+					<label for="username">Username</label> 
+					<input type="text" class="form-control" placeholder="Username" id="username" name="username" required autofocus>
+				</div>
+
+				<div class="form-label-group">
+					<label for="password">Senha</label>
+					 <input type="password" class="form-control" placeholder="Senha" id="senha" name="senha" required>
+				</div>
+			</div>
+			</br> <input type="submit" class="btn btn-lg btn-primary btn-block"
+				value="Entrar" id="botaoLogin" />
+			<hr>
+		</form>
+	</div>
+</body>
+
+</html>

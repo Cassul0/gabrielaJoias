@@ -16,4 +16,9 @@ public class HomePageController {
 	public String abrirPaginaInicial() {
 		return "homePage";
 	}
+	
+	@GetMapping("/login")
+	public String login() {
+		return "login";
+	}
 }

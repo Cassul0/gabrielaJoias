@@ -1,3 +1,3 @@
-INSERT INTO USUARIO (NOME, EMAIL, SENHA) VALUES ('Teste1', 'emailTeste1@teste', 'teste1');
-INSERT INTO USUARIO (NOME, EMAIL, SENHA) VALUES ('Teste2', 'emailTeste2@teste', 'teste2');
-INSERT INTO USUARIO (NOME, EMAIL, SENHA) VALUES ('Teste3', 'emailTeste3@teste', 'teste3');
+INSERT INTO USUARIO (NOME, USERNAME, EMAIL, SENHA, ROLE) VALUES ('admin', 'admin', 'emailTeste1@teste', '$2a$10$iP/gRbvOjWFUVkIdpM/vhO7eIZCFZRptyTcATqwCrMNVDT9Qtgh5y', 'ADMIN');
+INSERT INTO USUARIO (NOME, USERNAME, EMAIL, SENHA, ROLE) VALUES ('Teste2', 'teste2', 'emailTeste2@teste', '$2a$12$bPUqxUHcPdngm/rGTvRkF.s/19qJE7kSZyoFHEhIxUYzyVcBAdQYe', 'ADMIN');
+INSERT INTO USUARIO (NOME, USERNAME, EMAIL, SENHA, ROLE) VALUES ('Teste3', 'teste3', 'emailTeste3@teste', '$2a$12$FVZ5Ln6xVnMnEQlW31mriOq0A0ivAAE.Xi4QmNUecaVc1IX/1Bb3m', 'ADMIN');
