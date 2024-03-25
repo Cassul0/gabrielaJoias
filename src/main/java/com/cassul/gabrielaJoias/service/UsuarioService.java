@@ -50,7 +50,12 @@ public class UsuarioService implements UserDetailsService{
 		            .roles("ADMIN") 
 		            .build();
 		} else {
-			throw new UsernameNotFoundException(username);
+			return User.withUsername(" ")
+		            .password(" ")
+		            .roles(" ")
+		            .disabled(true)
+		            .build();
 		}
+		
 	}
 }

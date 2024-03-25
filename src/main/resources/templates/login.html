@@ -62,23 +62,33 @@
 <body>
 	<div class="container">
 		<form class="form-signin was-validated" method="post"
-			action="/login">
+			th:action="@{/auth}" th:object="${user}">
 			<div class="text-center mb-4">
 
 				<h1 class="h3 mb-3 font-weight-normal"></h1>
 				<hr>
 				<p class="font-weight-lighter">Seja bem-vindo.</p>
 				<p class="text-muted">Realize seu login para continuar</p>
+				<div th:if="${alerta != null}"
+					th:class="${alerta == 'erro'} ? 'alert alert-danger' : 'alert alert-success'"
+					role="alert">
+					<h4 th:text="${titulo}" class="alert-heading">Credenciais...</h4>
+					<p th:text="${texto}">Login ou senha incorretos...</p>
+					<hr>
+					<p class="mb-0">
+						<small th:text="${subtexto}">Acesso permitido...</small>
+					</p>
+				</div>
 			</div>
 			<div class="row" style="width: 480px; text-align: center">
 				<div class="form-label-group">
 					<label for="username">Username</label> 
-					<input type="text" class="form-control" placeholder="Username" id="username" name="username" required autofocus>
+					<input type="text" th:field="*{username}" class="form-control" placeholder="Username" id="username" name="username" required autofocus>
 				</div>
 
 				<div class="form-label-group">
 					<label for="password">Senha</label>
-					 <input type="password" class="form-control" placeholder="Senha" id="senha" name="senha" required>
+					 <input type="password" th:field="*{senha}" class="form-control" placeholder="Senha" id="senha" name="senha" required>
 				</div>
 			</div>
 			</br> <input type="submit" class="btn btn-lg btn-primary btn-block"
